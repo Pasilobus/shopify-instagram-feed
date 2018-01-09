@@ -1,0 +1,23 @@
+<div class="instagram-section">
+  <h2>{{ 'layout.homepage.instagram' | t }}</h2>
+  <h4>@instagram_handle</h4>
+  <hr/>
+  {% assign url = '{{image}}' %}
+  {% assign caption = '{{caption}}' %}
+  <div id="instafeed"
+       data-access-token="{{ settings.instagram_access_token }}"
+       data-client-id="{{ settings.instagram_user_id }}"
+       class="grid"></div>
+</div>
+
+<script>
+    var insta = document.getElemendById('instafeed')
+
+    var feed = new Instafeed({
+        get: 'user',
+        userId: insta.getAttribute('data-user-id'),
+        accessToken: insta.getAttribute('data-access-token'),
+        template: '<a class="fancybox grid__item one-sixth medium-down--one-third padded" href="{{url}}" rel="ig" title="{{ caption }}"><img class="instagram-image" src="{{ url }}" /></a></div>'
+    });
+    feed.run();
+</script>

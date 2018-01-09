@@ -1,0 +1,19 @@
+ {
+    "name": "Home page - Instagram",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Important Instagram user feed setup requires an account authorisation to display your images - [click here](https:\/\/outofthesandbox.com\/pages\/instagram-access-token) for instructions"
+      },
+      {
+        "type": "textarea",
+        "id": "instagram_user_id",
+        "label": "Instagram user id number"
+      },
+      {
+        "type": "textarea",
+        "id": "instagram_access_token",
+        "label": "Instagram access token"
+      }
+    ]
+  }

@@ -1,0 +1,30 @@
+* {
+  boz-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+
+h2 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+.instagram-section {
+  padding: 20px;
+  hr {
+    margin: 10px auto;
+    max-width: 200px;
+  }
+}
+
+.instagram-feed {
+}
